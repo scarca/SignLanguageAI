@@ -1,0 +1,4 @@
+#!/bin/bash 
+
+gcloud compute --project general-ds scp general-instance:tmp/events* log/ 
+tensorboard --logdir=./log 
